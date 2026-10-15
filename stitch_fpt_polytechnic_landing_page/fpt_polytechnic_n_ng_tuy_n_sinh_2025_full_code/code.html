@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cao Đẳng FPT Polytechnic Đà Nẵng - Tuyển Sinh 2025 | Thực Học - Thực Nghiệp</title>
+  <meta name="description" content="Cổng thông tin tuyển sinh chính thức Cao đẳng FPT Polytechnic Đà Nẵng năm 2025. Cam kết 97.7% sinh viên có việc làm ngay sau 2 năm 4 tháng đào tạo thực chiến.">
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            fpt: {
+              orange: '#F26522',
+              'orange-dark': '#D85413',
+              'orange-light': '#FFF5EE',
+              navy: '#0C192C',
+              'navy-light': '#162844',
+              blue: '#0066B3',
+              green: '#27AE60',
+              gray: '#F8FAFC'
+            }
+          },
+          fontFamily: {
+            heading: ['"Plus Jakarta Sans"', 'sans-serif'],
+            sans: ['"Inter"', 'sans-serif']
+          },
+          boxShadow: {
+            'fpt-card': '0 10px 30px -5px rgba(242, 101, 34, 0.08), 0 4px 12px -2px rgba(12, 25, 44, 0.05)',
+            'fpt-hover': '0 20px 40px -10px rgba(242, 101, 34, 0.2), 0 8px 16px -4px rgba(12, 25, 44, 0.08)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles & Animations -->
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #F26522;
+    }
+
+    /* Glassmorphism Styles */
+    .glass-header {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .dark-glass-card {
+      background: rgba(22, 40, 68, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    /* Scroll Reveal Initial State */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Staggered Delay for grid items */
+    .delay-100 { transition-delay: 100ms; }
+    .delay-200 { transition-delay: 200ms; }
+    .delay-300 { transition-delay: 300ms; }
+    .delay-400 { transition-delay: 400ms; }
+
+    /* Glow pulse on CTA */
+    @keyframes pulse-subtle {
+      0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(242, 101, 34, 0.5); }
+      50% { transform: scale(1.02); box-shadow: 0 0 20px 4px rgba(242, 101, 34, 0.35); }
+    }
+    .animate-pulse-cta {
+      animation: pulse-subtle 3s infinite ease-in-out;
+    }
+
+    /* Dot grid background pattern */
+    .bg-grid-pattern {
+      background-image: radial-gradient(#F26522 1px, transparent 1px);
+      background-size: 24px 24px;
+      opacity: 0.08;
+    }
+  </style>
+</head>
+<body class="font-sans bg-[#F8FAFC] text-slate-800 antialiased selection:bg-orange-500 selection:text-white">
+
+  <!-- TOP BAR: HOTLINE & ANNOUNCEMENT -->
+  <div class="bg-fpt-navy text-white text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-4 text-slate-300">
+        <span class="inline-flex items-center gap-1.5 font-medium text-orange-400">
+          <i data-lucide="sparkles" class="w-4 h-4"></i> Tuyển sinh Khóa 21.3 - Học bổng lên đến 70%
+        </span>
+        <span class="hidden md:inline text-slate-500">|</span>
+        <span class="hidden md:inline-flex items-center gap-1">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-orange-400"></i> Nam Kỳ Khởi Nghĩa, Q. Ngũ Hành Sơn, TP. Đà Nẵng
+        </span>
+      </div>
+      <div class="flex items-center gap-4 text-xs font-medium">
+        <a href="tel:02367300999" class="hover:text-orange-400 transition-colors flex items-center gap-1">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5 text-green-400 animate-pulse"></i>
+          <span>Hotline: (0236) 7300 999</span>
+        </a>
+        <a href="#dang-ky" class="text-orange-400 hover:text-white transition-colors underline underline-offset-4">Tra cứu hồ sơ</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY HEADER & NAVBAR -->
+  <header id="main-header" class="sticky top-0 z-50 glass-header border-b border-slate-200/80 transition-all duration-300 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- BRAND LOGO -->
+        <a href="#" class="flex items-center gap-3 group focus:outline-none">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-[#F26522] to-[#FF8A4C] flex items-center justify-center text-white font-heading font-black text-2xl shadow-lg shadow-orange-500/30 group-hover:scale-105 transition-transform duration-300">
+            FPT
+          </div>
+          <div class="flex flex-col">
+            <span class="font-heading font-black text-xl tracking-tight text-fpt-navy leading-none">
+              POLYTECHNIC
+            </span>
+            <span class="text-xs font-bold text-fpt-orange tracking-wider uppercase mt-1">
+              Cơ sở Đà Nẵng
+            </span>
+          </div>
+        </a>
+
+        <!-- DESKTOP NAV ITEMS -->
+        <nav class="hidden lg:flex items-center gap-8 font-heading font-semibold text-[15px] text-slate-700">
+          <a href="#hero" class="hover:text-fpt-orange transition-colors active">Trang chủ</a>
+          <a href="#nganh-hoc" class="hover:text-fpt-orange transition-colors">Ngành đào tạo</a>
+          <a href="#so-lieu" class="hover:text-fpt-orange transition-colors">Ưu thế Poly</a>
+          <a href="#hoc-phi" class="hover:text-fpt-orange transition-colors">Học phí & Học bổng</a>
+          <a href="#doi-song" class="hover:text-fpt-orange transition-colors">Đời sống SV</a>
+          <a href="#lien-he" class="hover:text-fpt-orange transition-colors">Liên hệ</a>
+        </nav>
+
+        <!-- CTA BUTTON & MOBILE TOGGLE -->
+        <div class="flex items-center gap-3">
+          <a href="#dang-ky" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-fpt-orange to-[#FF7A34] hover:from-fpt-orange-dark hover:to-fpt-orange text-white font-heading font-bold text-sm px-6 py-3 rounded-xl shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 transition-all duration-300 transform hover:-translate-y-0.5">
+            <i data-lucide="edit-3" class="w-4 h-4"></i>
+            <span>Đăng Ký Xét Tuyển</span>
+          </a>
+
+          <!-- Mobile Hamburger Button -->
+          <button id="mobile-menu-btn" type="button" class="lg:hidden p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none transition-colors" aria-label="Mở menu">
+            <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
+            <i data-lucide="x" id="close-icon" class="w-6 h-6 hidden"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOBILE MENU DRAWER -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white/98 backdrop-blur-md px-6 py-6 space-y-4 shadow-xl">
+      <nav class="flex flex-col space-y-3 font-heading font-semibold text-slate-700 text-base">
+        <a href="#hero" class="mobile-nav-link py-2 border-b border-slate-100 hover:text-fpt-orange flex items-center justify-between">
+          <span>Trang chủ</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+        </a>
+        <a href="#nganh-hoc" class="mobile-nav-link py-2 border-b border-slate-100 hover:text-fpt-orange flex items-center justify-between">
+          <span>Ngành đào tạo</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+        </a>
+        <a href="#so-lieu" class="mobile-nav-link py-2 border-b border-slate-100 hover:text-fpt-orange flex items-center justify-between">
+          <span>Ưu thế vượt trội</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+        </a>
+        <a href="#hoc-phi" class="mobile-nav-link py-2 border-b border-slate-100 hover:text-fpt-orange flex items-center justify-between">
+          <span>Học phí & Học bổng 2025</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+        </a>
+        <a href="#doi-song" class="mobile-nav-link py-2 border-b border-slate-100 hover:text-fpt-orange flex items-center justify-between">
+          <span>Đời sống sinh viên Poly</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+        </a>
+        <a href="#lien-he" class="mobile-nav-link py-2 hover:text-fpt-orange flex items-center justify-between">
+          <span>Thông tin liên hệ</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+        </a>
+      </nav>
+      <div class="pt-2">
+        <a href="#dang-ky" class="mobile-nav-link flex items-center justify-center gap-2 w-full bg-fpt-orange text-white font-heading font-bold py-3.5 rounded-xl shadow-md">
+          <i data-lucide="user-check" class="w-5 h-5"></i>
+          <span>Nộp Hồ Sơ Trực Tuyến</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION -->
+  <section id="hero" class="relative pt-10 pb-20 md:pt-16 md:pb-28 overflow-hidden bg-gradient-to-b from-white via-orange-50/40 to-[#F8FAFC]">
+    <div class="absolute inset-0 bg-grid-pattern pointer-events-none"></div>
+    <div class="absolute -top-32 -right-32 w-96 h-96 bg-orange-400/15 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 -left-32 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Text Left -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left reveal">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-100/90 text-fpt-orange border border-orange-200 text-xs sm:text-sm font-semibold tracking-wide">
+            <span class="w-2 h-2 rounded-full bg-fpt-orange animate-ping"></span>
+            Tuyển sinh Khóa 21.3 • Cơ sở Đà Nẵng
+          </div>
+
+          <h1 class="font-heading font-extrabold text-3xl sm:text-5xl lg:text-6xl text-fpt-navy tracking-tight leading-[1.15]">
+            Thực Học - Thực Nghiệp <br class="hidden sm:inline">
+            <span class="bg-gradient-to-r from-fpt-orange to-[#FF7A34] bg-clip-text text-transparent">
+              Vững Bước Tương Lai
+            </span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            Chương trình đào tạo thực chiến tinh gọn <strong class="text-slate-800">2 năm 4 tháng</strong> với phương châm 100% học qua dự án thực tế. Nơi trang bị cho bạn năng lực nghề nghiệp vững chắc để tự tin gia nhập các tập đoàn công nghệ & doanh nghiệp hàng đầu tại miền Trung và toàn quốc.
+          </p>
+
+          <!-- Core Highlights Badges -->
+          <div class="flex flex-wrap justify-center lg:justify-start gap-4 pt-1 text-sm font-medium text-slate-700">
+            <div class="flex items-center gap-2 bg-white px-3.5 py-2 rounded-xl shadow-sm border border-slate-200">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-green-500"></i>
+              <span>Xét tuyển học bạ THPT</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white px-3.5 py-2 rounded-xl shadow-sm border border-slate-200">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-green-500"></i>
+              <span>Học qua dự án thực tế</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white px-3.5 py-2 rounded-xl shadow-sm border border-slate-200">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-green-500"></i>
+              <span>Cam kết giới thiệu việc làm</span>
+            </div>
+          </div>
+
+          <!-- Hero CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+            <a href="#dang-ky" class="animate-pulse-cta w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-fpt-orange hover:bg-fpt-orange-dark text-white font-heading font-bold text-base px-8 py-4 rounded-xl shadow-xl shadow-orange-500/30 transition-all duration-300">
+              <span>Đăng Ký Tư Vấn Ngay</span>
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+            <a href="#nganh-hoc" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-fpt-navy font-heading font-bold text-base px-7 py-4 rounded-xl border border-slate-300 shadow-sm transition-all duration-200">
+              <i data-lucide="compass" class="w-5 h-5 text-fpt-orange"></i>
+              <span>Khám Phá 15+ Ngành Học</span>
+            </a>
+          </div>
+
+          <!-- Social Proof / Network Banner -->
+          <div class="pt-6 border-t border-slate-200/80 flex items-center justify-center lg:justify-start gap-4">
+            <div class="flex -space-x-2">
+              <div class="w-9 h-9 rounded-full bg-orange-500 border-2 border-white flex items-center justify-center text-white text-xs font-bold shadow-sm">IT</div>
+              <div class="w-9 h-9 rounded-full bg-blue-600 border-2 border-white flex items-center justify-center text-white text-xs font-bold shadow-sm">MK</div>
+              <div class="w-9 h-9 rounded-full bg-emerald-600 border-2 border-white flex items-center justify-center text-white text-xs font-bold shadow-sm">DL</div>
+              <div class="w-9 h-9 rounded-full bg-purple-600 border-2 border-white flex items-center justify-center text-white text-xs font-bold shadow-sm">+5k</div>
+            </div>
+            <div class="text-left text-xs sm:text-sm text-slate-500 leading-tight">
+              <strong class="text-slate-800 font-semibold block text-sm">Hơn 45.000+ cựu sinh viên</strong>
+              đang làm việc tại FPT Software, Sun*, Viettel, Vinpearl...
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Card Right (Interactive Visual Preview) -->
+        <div class="lg:col-span-5 reveal delay-200">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <!-- Glow background -->
+            <div class="absolute -inset-1.5 bg-gradient-to-r from-orange-500 to-amber-500 rounded-3xl blur-lg opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+            
+            <!-- Main Campus Showcase Card -->
+            <div class="relative bg-fpt-navy rounded-3xl p-6 sm:p-8 text-white shadow-2xl border border-slate-700/80 overflow-hidden">
+              <div class="flex justify-between items-center pb-6 border-b border-slate-700">
+                <div class="flex items-center gap-3">
+                  <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                  <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                  <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                  <span class="text-xs font-mono text-slate-400 ml-2">Cơ sở FPT Đà Nẵng</span>
+                </div>
+                <span class="text-xs bg-orange-500/20 text-orange-400 font-semibold px-2.5 py-1 rounded-full border border-orange-500/30">
+                  Tuyển Sinh 2025
+                </span>
+              </div>
+
+              <!-- Quick Facts Inside Card -->
+              <div class="mt-6 space-y-4">
+                <div class="p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                  <div class="flex items-center justify-between text-xs text-orange-400 font-semibold uppercase tracking-wider mb-1">
+                    <span>Mô hình đào tạo</span>
+                    <span class="text-white">Blended Learning</span>
+                  </div>
+                  <div class="font-heading font-bold text-lg text-white">70% Thời lượng thực hành dự án</div>
+                  <p class="text-xs text-slate-300 mt-1">Làm quen quy trình làm việc chuẩn doanh nghiệp ngay từ kỳ học thứ nhất.</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+                    <div class="font-heading font-bold text-2xl text-orange-400">2N 4TH</div>
+                    <div class="text-xs text-slate-300 mt-1">Thời gian học tập tối ưu, sớm ra trường đi làm</div>
+                  </div>
+                  <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+                    <div class="font-heading font-bold text-2xl text-green-400">100%</div>
+                    <div class="text-xs text-slate-300 mt-1">Hỗ trợ kết nối phỏng vấn doanh nghiệp</div>
+                  </div>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-gradient-to-r from-orange-600/30 to-fpt-navy border border-orange-500/30">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-orange-500 flex items-center justify-center text-white flex-shrink-0">
+                      <i data-lucide="music" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                      <div class="font-heading font-bold text-sm text-white">Đại Nhạc Hội & Sự Kiện</div>
+                      <div class="text-xs text-slate-300">Happy Bee, Poly X, Thủ Lĩnh Sinh Viên bùng nổ</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-6 pt-4 text-center">
+                <a href="#dang-ky" class="block w-full py-3 px-4 rounded-xl bg-white text-fpt-navy font-heading font-bold text-sm hover:bg-orange-50 transition-colors shadow">
+                  Nhận Thông Tin Học Bổng Đà Nẵng
+                </a>
+              </div>
+            </div>
+
+            <!-- Floating Mini Badge -->
+            <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-slate-200 hidden sm:flex items-center gap-3 animate-bounce" style="animation-duration: 4s;">
+              <div class="w-10 h-10 rounded-xl bg-green-100 text-green-600 flex items-center justify-center">
+                <i data-lucide="award" class="w-6 h-6"></i>
+              </div>
+              <div class="text-left">
+                <div class="text-xs font-bold text-slate-900">Top 1 Việc Làm</div>
+                <div class="text-[11px] text-slate-500">Tại các thành phố trọng điểm</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. COUNTER STATS SECTION -->
+  <section id="so-lieu" class="py-16 bg-fpt-navy text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-12 reveal">
+        <span class="text-orange-400 font-heading font-bold text-xs uppercase tracking-widest bg-orange-500/10 px-3 py-1 rounded-full border border-orange-500/20">
+          Chỉ Số Khẳng Định Vị Thế
+        </span>
+        <h2 class="font-heading font-extrabold text-2xl sm:text-4xl text-white mt-3">
+          Những Con Số Ấn Tượng Tạo Nên Thương Hiệu
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base mt-2">
+          Minh chứng sống động cho chất lượng đào tạo thực chiến và sự tín nhiệm từ cộng đồng doanh nghiệp miền Trung.
+        </p>
+      </div>
+
+      <!-- Stats Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Stat 1 -->
+        <div class="dark-glass-card p-6 sm:p-8 rounded-3xl border border-slate-700/80 text-center hover:border-orange-500/60 transition-all duration-300 group reveal">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-orange-500/10 text-orange-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <i data-lucide="briefcase" class="w-7 h-7"></i>
+          </div>
+          <div class="flex items-baseline justify-center gap-1 font-heading font-black text-4xl sm:text-5xl text-orange-400">
+            <span class="counter" data-target="97.7" data-decimals="1">0</span>
+            <span>%</span>
+          </div>
+          <div class="font-heading font-bold text-base text-white mt-2">Có Việc Làm Ngay</div>
+          <p class="text-xs text-slate-400 mt-1">Trong vòng 1 năm sau khi tốt nghiệp tại các doanh nghiệp đối tác.</p>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="dark-glass-card p-6 sm:p-8 rounded-3xl border border-slate-700/80 text-center hover:border-orange-500/60 transition-all duration-300 group reveal delay-100">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <i data-lucide="building-2" class="w-7 h-7"></i>
+          </div>
+          <div class="flex items-baseline justify-center gap-1 font-heading font-black text-4xl sm:text-5xl text-white">
+            <span class="counter" data-target="500" data-decimals="0">0</span>
+            <span class="text-orange-400">+</span>
+          </div>
+          <div class="font-heading font-bold text-base text-white mt-2">Doanh Nghiệp Đối Tác</div>
+          <p class="text-xs text-slate-400 mt-1">Hợp tác trực tiếp nhận thực tập và tuyển dụng sinh viên Poly.</p>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="dark-glass-card p-6 sm:p-8 rounded-3xl border border-slate-700/80 text-center hover:border-orange-500/60 transition-all duration-300 group reveal delay-200">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <i data-lucide="clock" class="w-7 h-7"></i>
+          </div>
+          <div class="flex items-baseline justify-center gap-1 font-heading font-black text-4xl sm:text-5xl text-white">
+            <span class="counter" data-target="2.4" data-decimals="1">0</span>
+            <span class="text-sm font-semibold ml-1 text-slate-300">Năm</span>
+          </div>
+          <div class="font-heading font-bold text-base text-white mt-2">Thời Gian Đào Tạo</div>
+          <p class="text-xs text-slate-400 mt-1">2 năm 4 tháng tinh gọn, lược bỏ lý thuyết suông, tối đa thực hành.</p>
+        </div>
+
+        <!-- Stat 4 -->
+        <div class="dark-glass-card p-6 sm:p-8 rounded-3xl border border-slate-700/80 text-center hover:border-orange-500/60 transition-all duration-300 group reveal delay-300">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <i data-lucide="layers" class="w-7 h-7"></i>
+          </div>
+          <div class="flex items-baseline justify-center gap-1 font-heading font-black text-4xl sm:text-5xl text-orange-400">
+            <span class="counter" data-target="100" data-decimals="0">0</span>
+            <span>%</span>
+          </div>
+          <div class="font-heading font-bold text-base text-white mt-2">Thực Hành Thực Chiến</div>
+          <p class="text-xs text-slate-400 mt-1">Mỗi môn học là một sản phẩm thực tế đáp ứng tiêu chuẩn ngành.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. MAJORS & TRAINING PROGRAMS (INTERACTIVE TABS) -->
+  <section id="nganh-hoc" class="py-20 bg-slate-50 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12 reveal">
+        <span class="text-fpt-orange font-heading font-bold text-xs uppercase tracking-widest bg-orange-100 px-3.5 py-1.5 rounded-full border border-orange-200">
+          Chương Trình Đào Tạo Chuẩn Doanh Nghiệp
+        </span>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-fpt-navy mt-4">
+          Khám Phá Các Ngành Học "Khát" Nhân Lực
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          Đón đầu làn sóng công nghệ, kinh tế số và dịch vụ hiện đại tại Đà Nẵng với lộ trình học tập bám sát thực tiễn.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10 reveal">
+        <button type="button" class="tab-btn px-5 py-2.5 rounded-full font-heading font-bold text-xs sm:text-sm transition-all duration-200 bg-fpt-orange text-white shadow-md shadow-orange-500/25" data-category="all">
+          Tất cả ngành học (8)
+        </button>
+        <button type="button" class="tab-btn px-5 py-2.5 rounded-full font-heading font-semibold text-xs sm:text-sm bg-white text-slate-600 hover:text-fpt-orange hover:bg-orange-50 border border-slate-200 transition-all duration-200" data-category="it">
+          Công Nghệ Thông Tin
+        </button>
+        <button type="button" class="tab-btn px-5 py-2.5 rounded-full font-heading font-semibold text-xs sm:text-sm bg-white text-slate-600 hover:text-fpt-orange hover:bg-orange-50 border border-slate-200 transition-all duration-200" data-category="biz">
+          Kinh Tế & Marketing
+        </button>
+        <button type="button" class="tab-btn px-5 py-2.5 rounded-full font-heading font-semibold text-xs sm:text-sm bg-white text-slate-600 hover:text-fpt-orange hover:bg-orange-50 border border-slate-200 transition-all duration-200" data-category="design">
+          Thiết Kế Đồ Họa
+        </button>
+        <button type="button" class="tab-btn px-5 py-2.5 rounded-full font-heading font-semibold text-xs sm:text-sm bg-white text-slate-600 hover:text-fpt-orange hover:bg-orange-50 border border-slate-200 transition-all duration-200" data-category="tour">
+          Du Lịch - Khách Sạn
+        </button>
+      </div>
+
+      <!-- Majors Cards Grid -->
+      <div id="majors-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Major 1: Web Dev -->
+        <div class="major-card bg-white rounded-3xl p-6 border border-slate-200/80 shadow-fpt-card hover:shadow-fpt-hover transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5" data-category="it">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-orange-100 text-fpt-orange flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="code-2" class="w-6 h-6"></i>
+              </div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-orange-600 bg-orange-50 px-2.5 py-1 rounded-full border border-orange-200">
+                Top Trending
+              </span>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-slate-900 group-hover:text-fpt-orange transition-colors">
+              Lập Trình Web (Frontend & Backend)
+            </h3>
+            <p class="text-xs text-slate-500 mt-2 line-clamp-3">
+              Thực hành ReactJS, NodeJS, Java Spring Boot, quản trị cơ sở dữ liệu và triển khai Cloud AWS.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 space-y-2">
+            <div class="flex items-center justify-between text-xs">
+              <span class="text-slate-400">Cơ hội việc làm:</span>
+              <span class="font-semibold text-slate-700">Rất cao tại Đà Nẵng</span>
+            </div>
+            <div class="flex items-center justify-between text-xs">
+              <span class="text-slate-400">Mức lương khởi điểm:</span>
+              <span class="font-bold text-emerald-600">9 - 15 Triệu/tháng</span>
+            </div>
+            <button type="button" onclick="selectMajor('Lập Trình Web')" class="w-full mt-3 py-2 text-xs font-heading font-bold text-fpt-orange hover:bg-orange-50 rounded-xl border border-orange-200 transition-colors">
+              Chọn ngành tư vấn &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Major 2: AI & Software -->
+        <div class="major-card bg-white rounded-3xl p-6 border border-slate-200/80 shadow-fpt-card hover:shadow-fpt-hover transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5" data-category="it">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="cpu" class="w-6 h-6"></i>
+              </div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full border border-blue-200">
+                Công Nghệ Mới
+              </span>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-slate-900 group-hover:text-fpt-orange transition-colors">
+              Kỹ Thuật Phần Mềm & AI
+            </h3>
+            <p class="text-xs text-slate-500 mt-2 line-clamp-3">
+              Đón đầu làn sóng Trí tuệ nhân tạo (AI/ML), phân tích dữ liệu, tự động hóa quy trình nghiệp vụ phần mềm.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 space-y-2">
+            <div class="flex items-center justify-between text-xs">
+              <span class="text-slate-400">Cơ hội việc làm:</span>
+              <span class="font-semibold text-slate-700">FPT Software đón nhận</span>
+            </div>
+            <div class="flex items-center justify-between text-xs">
+              <span class="text-slate-400">Mức lương khởi điểm:</span>
+              <span class="font-bold text-emerald-600">10 - 18 Triệu/tháng</span>
+            </div>
+            <button type="button" onclick="selectMajor('Kỹ Thuật Phần Mềm & AI')" class="w-full mt-3 py-2 text-xs font-heading font-bold text-fpt-orange hover:bg-orange-50 rounded-xl border border-orange-200 transition-colors">
+              Chọn ngành tư vấn &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Major 3: Graphic Design -->
+        <div class="major-card bg-white rounded-3xl p-6 border border-slate-200/80 shadow-fpt-card hover:shadow-fpt-hover transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5" data-category="design">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-purple-100 text-purple-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="palette" class="w-6 h-6"></i>
+              </div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-purple-600 bg-purple-50 px-2.5 py-1 rounded-full border border-purple-200">
+                Sáng Tạo Gen Z
+              </span>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-slate-900 group-hover:text-fpt-orange transition-colors">
+              Thiết Kế Đồ Họa (Graphic Design)
+            </h3>
+            <p class="text-xs text-slate-500 mt-2 line-clamp-3">
+              Làm chủ Photoshop, Illustrator, Premiere, After Effects, 3D Blender và tư duy thiết kế nhận diện thương hiệu.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 space-y-2">
+            <div class="flex items-center justify-between text-xs">
+              <span class="text-slate-400">Cơ hội việc làm:</span>
+              <span class="font-semibold text-slate-700">Agency, Studio, Game</span>
+            </div>
+            <div class="flex items-center justify-between text-xs">
+              <span class="text-slate-400">Mức lương khởi điểm:</span>
+              <span class="font-bold text-emerald-600">8 - 14 Triệu/tháng</span>
+            </div>
+            <button type="button" onclick="selectMajor('Thiết Kế Đồ Họa')" class="w-full mt-3 py-2 text-xs font-heading font-bold text-fpt-orange hover:bg-orange-50 rounded-xl border border-orange-200 transition-colors">
+              Chọn ngành tư vấn &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Major 4: Digital Marketing -->
+        <div class="major-card bg-white rounded-3xl p-6 border border-slate-200/80 shadow-fpt-card hover:shadow-fpt-hover transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5" data-category="biz">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="trending-up" class="w-6 h-6"></i>
+              </div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-rose-600 bg-rose-50 px-2.5 py-1 rounded-full border border-rose-200">
+                Tuyển Dụng Mạnh
+              </span>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-slate-900 group-hover:text-fpt-orange transition-colors">
+              Digital & Social Media Marketing
+            </h3>
+            <p class="text-xs text-slate-500 mt-2 line-clamp-3">
+              Chạy Ads đa kênh, SEO thực chiến, Sáng tạo nội dung viral, Livestream Commerce và xây dựng chiến lược thương hiệu.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 space-y-2">
+            <div class="flex items-center justify-between text-xs">
+              <span class="text-slate-400">Cơ hội việc làm:</span>
+              <span class="font-semibold text-slate-700">Mọi doanh nghiệp</span>
+            </div>
+            <div class="flex items-center justify-between text-xs">
+              <span class="text-slate-400">Mức lương khởi điểm:</span>
+              <span class="font-bold text-emerald-600">8 - 16 Triệu/tháng</span>
+            </div>
+            <button type="button" onclick="selectMajor('Digital Marketing')" class="w-full mt-3 py-2 text-xs font-heading font-bold text-fpt-orange hover:bg-orange-50 rounded-xl border border-orange-200 transition-colors">
+              Chọn ngành tư vấn &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Major 5: Logistics -->
+        <div class="major-card bg-white rounded-3xl p-6 border border-slate-200/80 shadow-fpt-card hover:shadow-fpt-hover transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5" data-category="biz">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="truck" class="w-6 h-6"></i>
+              </div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">
+                Thương Mại Toàn Cầu
+              </span>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-slate-900 group-hover:text-fpt-orange transition-colors">
+              Logistics & Quản Lý Chuỗi Cung Ứng
+            </h3>
+            <p class="text-xs text-slate-500 mt-2 line-clamp-3">
+              Quản trị kho vận hàng không - đường biển cảng Đà Nẵng, xuất nhập khẩu, forwarder và khai báo hải quan điện tử.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 space-y-2">
+            <div class="flex items-center justify-between text-xs">
+              <span class="text-slate-400">Cơ hội việc làm:</span>
+              <span class="font-semibold text-slate-700">Cảng biển & KCN Đà Nẵng</span>
+            </div>
+            <div class="flex items-center justify-between text-xs">
+              <span class="text-slate-400">Mức lương khởi điểm:</span>
+              <span class="font-bold text-emerald-600">8.5 - 15 Triệu/tháng</span>
+            </div>
+            <button type="button" onclick="selectMajor('Logistics & Chuỗi Cung Ứng')" class="w-full mt-3 py-2 text-xs font-heading font-bold text-fpt-orange hover:bg-orange-50 rounded-xl border border-orange-200 transition-colors">
+              Chọn ngành tư vấn &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Major 6: Hospitality -->
+        <div class="major-card bg-white rounded-3xl p-6 border border-slate-200/80 shadow-fpt-card hover:shadow-fpt-hover transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5" data-category="tour">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-cyan-100 text-cyan-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="hotel" class="w-6 h-6"></i>
+              </div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-cyan-600 bg-cyan-50 px-2.5 py-1 rounded-full border border-cyan-200">
+                Đà Nẵng Destination
+              </span>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-slate-900 group-hover:text-fpt-orange transition-colors">
+              Quản Trị Khách Sạn & Resort 5 Sao
+            </h3>
+            <p class="text-xs text-slate-500 mt-2 line-clamp-3">
+              Nghiệp vụ buồng phòng, lễ tân quốc tế, F&B, quản trị sự kiện tiệc cưới và ngoại ngữ thực chiến tại resort ven biển.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 space-y-2">
+            <div class="flex items-center justify-between text-xs">
+              <span class="text-slate-400">Cơ hội việc làm:</span>
+              <span class="font-semibold text-slate-700">Top resort 5 sao Đà Nẵng</span>
+            </div>
+            <div class="flex items-center justify-between text-xs">
+              <span class="text-slate-400">Mức lương khởi điểm:</span>
+              <span class="font-bold text-emerald-600">7.5 - 13 Triệu + Tips</span>
+            </div>
+            <button type="button" onclick="selectMajor('Quản Trị Khách Sạn & Resort')" class="w-full mt-3 py-2 text-xs font-heading font-bold text-fpt-orange hover:bg-orange-50 rounded-xl border border-orange-200 transition-colors">
+              Chọn ngành tư vấn &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Major 7: Cyber Security -->
+        <div class="major-card bg-white rounded-3xl p-6 border border-slate-200/80 shadow-fpt-card hover:shadow-fpt-hover transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5" data-category="it">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-indigo-100 text-indigo-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="shield-check" class="w-6 h-6"></i>
+              </div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full border border-indigo-200">
+                An Ninh Số
+              </span>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-slate-900 group-hover:text-fpt-orange transition-colors">
+              An Toàn Thông Tin & Mạng Máy Tính
+            </h3>
+            <p class="text-xs text-slate-500 mt-2 line-clamp-3">
+              Bảo mật hệ thống mạng, phòng ngừa tấn công mạng, quản trị hạ tầng máy chủ Cloud và vận hành trung tâm dữ liệu SOC.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 space-y-2">
+            <div class="flex items-center justify-between text-xs">
+              <span class="text-slate-400">Cơ hội việc làm:</span>
+              <span class="font-semibold text-slate-700">Ngân hàng, Viễn thông, Big Tech</span>
+            </div>
+            <div class="flex items-center justify-between text-xs">
+              <span class="text-slate-400">Mức lương khởi điểm:</span>
+              <span class="font-bold text-emerald-600">9 - 16 Triệu/tháng</span>
+            </div>
+            <button type="button" onclick="selectMajor('An Toàn Thông Tin')" class="w-full mt-3 py-2 text-xs font-heading font-bold text-fpt-orange hover:bg-orange-50 rounded-xl border border-orange-200 transition-colors">
+              Chọn ngành tư vấn &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Major 8: E-commerce -->
+        <div class="major-card bg-white rounded-3xl p-6 border border-slate-200/80 shadow-fpt-card hover:shadow-fpt-hover transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5" data-category="biz">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-teal-100 text-teal-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="shopping-bag" class="w-6 h-6"></i>
+              </div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-2.5 py-1 rounded-full border border-teal-200">
+                Thương Mại Điện Tử
+              </span>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-slate-900 group-hover:text-fpt-orange transition-colors">
+              Thương Mại Điện Tử (E-Commerce)
+            </h3>
+            <p class="text-xs text-slate-500 mt-2 line-clamp-3">
+              Xây dựng gian hàng Shopee, TikTok Shop, Amazon; tối ưu chuyển đổi, quản lý kho bán lẻ đa kênh omnichannel.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 space-y-2">
+            <div class="flex items-center justify-between text-xs">
+              <span class="text-slate-400">Cơ hội việc làm:</span>
+              <span class="font-semibold text-slate-700">Dễ khởi nghiệp & làm việc từ xa</span>
+            </div>
+            <div class="flex items-center justify-between text-xs">
+              <span class="text-slate-400">Mức lương khởi điểm:</span>
+              <span class="font-bold text-emerald-600">8 - 15 Triệu/tháng</span>
+            </div>
+            <button type="button" onclick="selectMajor('Thương Mại Điện Tử')" class="w-full mt-3 py-2 text-xs font-heading font-bold text-fpt-orange hover:bg-orange-50 rounded-xl border border-orange-200 transition-colors">
+              Chọn ngành tư vấn &rarr;
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Guidance Banner -->
+      <div class="mt-12 bg-fpt-navy text-white rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl reveal">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-orange-500/20 text-orange-400 flex items-center justify-center flex-shrink-0">
+            <i data-lucide="help-circle" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="font-heading font-bold text-lg text-white">Chưa biết mình phù hợp với ngành học nào?</h4>
+            <p class="text-xs sm:text-sm text-slate-300">Nhận bài test hướng nghiệp tính cách Holland & tư vấn 1-1 miễn phí từ chuyên gia tuyển sinh.</p>
+          </div>
+        </div>
+        <a href="#dang-ky" class="flex-shrink-0 bg-fpt-orange hover:bg-fpt-orange-dark text-white font-heading font-bold text-sm px-6 py-3 rounded-xl shadow-lg transition-colors">
+          Nhận Tư Vấn Định Hướng
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. TUITION & SCHOLARSHIPS -->
+  <section id="hoc-phi" class="py-20 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+        <span class="text-fpt-orange font-heading font-bold text-xs uppercase tracking-widest bg-orange-100 px-3.5 py-1.5 rounded-full border border-orange-200">
+          Chính Sách Tài Chính Minh Bạch
+        </span>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-fpt-navy mt-4">
+          Học Phí Rõ Ràng - Đồng Hành Cùng Phụ Huynh
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          FPT Polytechnic cam kết học phí trọn gói theo từng học kỳ, không phát sinh chi phí phụ, hỗ trợ học bổng tiếp sức tài năng trẻ Đà Nẵng và miền Trung.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left: Tuition Table -->
+        <div class="lg:col-span-7 bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm reveal">
+          <div class="flex items-center justify-between pb-4 border-b border-slate-200 mb-6">
+            <div>
+              <h3 class="font-heading font-bold text-xl text-fpt-navy">Lộ Trình Học Phí Cơ Sở Đà Nẵng</h3>
+              <p class="text-xs text-slate-500">Áp dụng cho niên khóa tuyển sinh 2025</p>
+            </div>
+            <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+              Cam kết không tăng đột biến
+            </span>
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex items-center justify-between p-4 bg-white rounded-2xl border border-slate-200 shadow-xs">
+              <div>
+                <span class="inline-block px-2.5 py-0.5 rounded text-[11px] font-bold bg-orange-100 text-fpt-orange mr-2">Kỳ 1</span>
+                <span class="font-heading font-bold text-sm text-slate-800">Học kỳ Nhập môn & Tiếng Anh cơ sở</span>
+                <p class="text-xs text-slate-400 mt-0.5">Trang bị phương pháp học tập & kỹ năng số</p>
+              </div>
+              <div class="text-right">
+                <div class="font-heading font-black text-slate-900 text-base">9.400.000 VNĐ</div>
+                <div class="text-[11px] text-slate-400">Đã bao gồm giáo trình</div>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between p-4 bg-white rounded-2xl border border-slate-200 shadow-xs">
+              <div>
+                <span class="inline-block px-2.5 py-0.5 rounded text-[11px] font-bold bg-blue-100 text-blue-600 mr-2">Kỳ 2-5</span>
+                <span class="font-heading font-bold text-sm text-slate-800">Giai đoạn Chuyên ngành & Xưởng dự án</span>
+                <p class="text-xs text-slate-400 mt-0.5">100% học qua dự án với chuyên gia doanh nghiệp</p>
+              </div>
+              <div class="text-right">
+                <div class="font-heading font-black text-slate-900 text-base">10.600.000 VNĐ</div>
+                <div class="text-[11px] text-slate-400">/học kỳ</div>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between p-4 bg-white rounded-2xl border border-slate-200 shadow-xs">
+              <div>
+                <span class="inline-block px-2.5 py-0.5 rounded text-[11px] font-bold bg-purple-100 text-purple-600 mr-2">Kỳ 6-7</span>
+                <span class="font-heading font-bold text-sm text-slate-800">Thực tập Doanh nghiệp (OJT) & Tốt nghiệp</span>
+                <p class="text-xs text-slate-400 mt-0.5">Làm việc trực tiếp tại doanh nghiệp, nhận trợ cấp</p>
+              </div>
+              <div class="text-right">
+                <div class="font-heading font-black text-emerald-600 text-base">Có Lương Trợ Cấp</div>
+                <div class="text-[11px] text-slate-400">Thực tập thực tế</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 mt-6 pt-4 border-t border-slate-200 text-xs text-slate-500">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+              <span>Miễn phí 100% giáo trình số & tài liệu</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+              <span>Không thu phụ phí cơ sở vật chất, lab máy</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+              <span>Hỗ trợ vay vốn học tập lãi xuất ưu đãi</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+              <span>Được cấp chứng chỉ hoàn thành module</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Scholarships Showcase -->
+        <div class="lg:col-span-5 bg-gradient-to-br from-fpt-navy to-slate-900 text-white rounded-3xl p-6 sm:p-8 shadow-xl relative overflow-hidden reveal delay-150">
+          <div class="absolute -top-12 -right-12 w-48 h-48 bg-orange-500/20 rounded-full blur-2xl"></div>
+
+          <div class="relative z-10">
+            <span class="text-orange-400 font-heading font-bold text-xs uppercase tracking-widest bg-orange-500/10 px-3 py-1 rounded-full border border-orange-500/30">
+              Quỹ Học Bổng 2025
+            </span>
+            <h3 class="font-heading font-extrabold text-2xl text-white mt-3">
+              Thắp Sáng Tài Năng
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-300 mt-1 mb-6">
+              Hàng trăm suất học bổng danh giá trao tặng các tân sinh viên có thành tích xuất sắc và đam mê nghề nghiệp.
+            </p>
+
+            <div class="space-y-3">
+              <!-- Item 1 -->
+              <div class="p-3.5 rounded-2xl bg-white/10 border border-white/15">
+                <div class="flex justify-between items-start">
+                  <div>
+                    <h5 class="font-heading font-bold text-sm text-white">Học bổng Thủ Khoa Đầu Vào</h5>
+                    <p class="text-xs text-slate-300">Dành cho thí sinh có điểm xét học bạ hoặc điểm thi THPT xuất sắc nhất mỗi đợt tuyển.</p>
+                  </div>
+                  <span class="text-xs font-black text-orange-400 bg-orange-500/20 px-2 py-0.5 rounded">70% Học Phí</span>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="p-3.5 rounded-2xl bg-white/10 border border-white/15">
+                <div class="flex justify-between items-start">
+                  <div>
+                    <h5 class="font-heading font-bold text-sm text-white">Học bổng “Bản Lĩnh FPoly-er”</h5>
+                    <p class="text-xs text-slate-300">Dành cho học sinh đạt giải HSG cấp Tỉnh/Thành phố hoặc tài năng thể thao, nghệ thuật.</p>
+                  </div>
+                  <span class="text-xs font-black text-amber-300 bg-amber-500/20 px-2 py-0.5 rounded">Mọi doanh nghiệp cần</span>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="p-3.5 rounded-2xl bg-white/10 border border-white/15">
+                <div class="flex justify-between items-start">
+                  <div>
+                    <h5 class="font-heading font-bold text-sm text-white">Gói Tiếp Sức Miền Trung</h5>
+                    <p class="text-xs text-slate-300">Tặng ngay Laptop phục vụ học tập hoặc trừ trực tiếp vào học phí kỳ đầu tiên cho 200 suất đăng ký sớm.</p>
+                  </div>
+                  <span class="text-xs font-black text-emerald-400 bg-emerald-500/20 px-2 py-0.5 rounded">Ưu Đãi Nhập Học</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="#dang-ky" class="mt-6 block w-full text-center py-3.5 px-4 rounded-xl bg-gradient-to-r from-fpt-orange to-[#FF7A34] text-white font-heading font-bold text-sm shadow-lg hover:from-fpt-orange-dark hover:to-fpt-orange transition-all">
+              Đăng Ký Xét Hồ Sơ Học Bổng
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. STUDENT LIFE & ACTIVITIES -->
+  <section id="doi-song" class="py-20 bg-slate-50 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+        <span class="text-fpt-orange font-heading font-bold text-xs uppercase tracking-widest bg-orange-100 px-3.5 py-1.5 rounded-full border border-orange-200">
+          Môi Trường Năng Động Chuẩn Gen Z
+        </span>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-fpt-navy mt-4">
+          Trải Nghiệm Thanh Xuân Rực Rỡ Tại FPT Poly Đà Nẵng
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          Không chỉ học tập chuyên môn, sinh viên được phát triển toàn diện kỹ năng mềm, ngoại ngữ và tham gia chuỗi sự kiện âm nhạc quy mô lớn.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-fpt-card hover:shadow-fpt-hover transition-all duration-300 reveal">
+          <div class="h-44 rounded-2xl bg-gradient-to-tr from-orange-400 to-amber-200 flex items-center justify-center text-white text-5xl mb-6 relative overflow-hidden group">
+            <i data-lucide="music-2" class="w-16 h-16 transform group-hover:scale-125 transition-transform duration-500 text-orange-700/80"></i>
+            <span class="absolute bottom-3 left-3 bg-black/40 backdrop-blur-md text-[11px] font-bold text-white px-3 py-1 rounded-full">
+              Happy Bee Concert
+            </span>
+          </div>
+          <h4 class="font-heading font-bold text-xl text-slate-900 mb-2">Đại Nhạc Hội Happy Bee Thường Niên</h4>
+          <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+            Sân khấu quy tụ các nghệ sĩ hàng đầu Việt Nam (Sơn Tùng M-TP, Đen Vâu, Hoàng Thùy Linh, Mono...). Đặc quyền vé miễn phí dành riêng cho sinh viên Poly.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-fpt-card hover:shadow-fpt-hover transition-all duration-300 reveal delay-100">
+          <div class="h-44 rounded-2xl bg-gradient-to-tr from-blue-400 to-indigo-200 flex items-center justify-center text-white text-5xl mb-6 relative overflow-hidden group">
+            <i data-lucide="users" class="w-16 h-16 transform group-hover:scale-125 transition-transform duration-500 text-blue-700/80"></i>
+            <span class="absolute bottom-3 left-3 bg-black/40 backdrop-blur-md text-[11px] font-bold text-white px-3 py-1 rounded-full">
+              Hơn 20+ CLB
+            </span>
+          </div>
+          <h4 class="font-heading font-bold text-xl text-slate-900 mb-2">Hệ Sinh Thái Câu Lạc Bộ Đa Dạng</h4>
+          <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+            Từ CLB Lập trình Poly Code, CLB Nhiếp ảnh & Media, CLB Esports, Âm nhạc Acoustic đến CLB Tình nguyện vì cộng đồng Đà Nẵng.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-fpt-card hover:shadow-fpt-hover transition-all duration-300 reveal delay-200">
+          <div class="h-44 rounded-2xl bg-gradient-to-tr from-emerald-400 to-teal-200 flex items-center justify-center text-white text-5xl mb-6 relative overflow-hidden group">
+            <i data-lucide="building" class="w-16 h-16 transform group-hover:scale-125 transition-transform duration-500 text-emerald-700/80"></i>
+            <span class="absolute bottom-3 left-3 bg-black/40 backdrop-blur-md text-[11px] font-bold text-white px-3 py-1 rounded-full">
+              Enterprise Tour
+            </span>
+          </div>
+          <h4 class="font-heading font-bold text-xl text-slate-900 mb-2">Tham Quan Doanh Nghiệp Từ Kỳ 1</h4>
+          <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+            Thực tế tại FPT Software Complex Đà Nẵng, Viettel, Enclave, InterContinental Danang... Hiểu rõ văn hóa làm việc trước khi đi thực tập.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. ADMISSION FORM SECTION -->
+  <section id="dang-ky" class="py-20 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Form Left Info -->
+        <div class="lg:col-span-5 space-y-6 reveal">
+          <span class="text-fpt-orange font-heading font-bold text-xs uppercase tracking-widest bg-orange-100 px-3.5 py-1.5 rounded-full border border-orange-200">
+            Nhanh Chóng - Tiện Lợi - Minh Bạch
+          </span>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-fpt-navy">
+            Đăng Ký Xét Tuyển Trực Tuyến 2025
+          </h2>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Chỉ với 2 phút điền thông tin, bạn đã hoàn tất bước đầu tiên để trở thành tân sinh viên FPT Polytechnic Đà Nẵng. Ban tuyển sinh sẽ liên hệ xác nhận và hướng dẫn thủ tục trong vòng 24 giờ.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-3">
+              <div class="w-7 h-7 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">1</div>
+              <div>
+                <h5 class="text-sm font-bold text-slate-800">Điền thông tin trực tuyến</h5>
+                <p class="text-xs text-slate-500">Cung cấp số điện thoại & ngành học mong muốn.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-7 h-7 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">2</div>
+              <div>
+                <h5 class="text-sm font-bold text-slate-800">Nhận tư vấn & Xét học bạ</h5>
+                <p class="text-xs text-slate-500">Thầy cô hỗ trợ chọn ngành phù hợp năng lực & hoàn tất hồ sơ.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-7 h-7 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">3</div>
+              <div>
+                <h5 class="text-sm font-bold text-slate-800">Nhận giấy báo trúng tuyển</h5>
+                <p class="text-xs text-slate-500">Làm thủ tục nhập học và nhận quà tặng chào tân sinh viên.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-orange-50 border border-orange-200 flex items-center gap-3">
+            <i data-lucide="phone-forwarded" class="w-6 h-6 text-fpt-orange flex-shrink-0"></i>
+            <div class="text-xs text-slate-700">
+              Cần giải đáp ngay lập tức? <br>
+              Gọi ngay hotline tuyển sinh: <strong class="text-fpt-orange font-bold text-sm">0981 325 356 (Zalo Tuyển Sinh)</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Card Right -->
+        <div class="lg:col-span-7 reveal delay-150">
+          <div class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-xl relative">
+            <h3 class="font-heading font-extrabold text-2xl text-slate-900">
+              Phiếu Đăng Ký Trực Tuyến
+            </h3>
+            <p class="text-xs text-slate-500 mt-1 mb-8">
+              Thông tin được bảo mật tuyệt đối theo tiêu chuẩn Tập đoàn FPT.
+            </p>
+
+            <form id="admission-form" class="space-y-5" novalidate>
+              <!-- Họ và tên -->
+              <div>
+                <label for="fullname" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                  Họ và tên thí sinh <span class="text-red-500">*</span>
+                </label>
+                <div class="relative">
+                  <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                    <i data-lucide="user" class="w-4 h-4"></i>
+                  </div>
+                  <input type="text" id="fullname" name="fullname" placeholder="Ví dụ: Nguyễn Văn An" class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-fpt-orange focus:border-transparent transition-all placeholder:text-slate-400">
+                </div>
+                <p id="name-error" class="text-red-500 text-xs mt-1 hidden"></p>
+              </div>
+
+              <!-- SĐT & Email (2 Cols) -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="phone" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                    Số điện thoại / Zalo <span class="text-red-500">*</span>
+                  </label>
+                  <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                      <i data-lucide="phone" class="w-4 h-4"></i>
+                    </div>
+                    <input type="tel" id="phone" name="phone" placeholder="Ví dụ: 0912345678" class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-fpt-orange focus:border-transparent transition-all placeholder:text-slate-400">
+                  </div>
+                  <p id="phone-error" class="text-red-500 text-xs mt-1 hidden"></p>
+                </div>
+
+                <div>
+                  <label for="email" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                    Địa chỉ Email <span class="text-red-500">*</span>
+                  </label>
+                  <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                      <i data-lucide="mail" class="w-4 h-4"></i>
+                    </div>
+                    <input type="email" id="email" name="email" placeholder="an.nguyen@gmail.com" class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-fpt-orange focus:border-transparent transition-all placeholder:text-slate-400">
+                  </div>
+                  <p id="email-error" class="text-red-500 text-xs mt-1 hidden"></p>
+                </div>
+              </div>
+
+              <!-- Trường THPT & Ngành quan tâm (2 Cols) -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="school" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                    Trường THPT / Tỉnh thành
+                  </label>
+                  <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                      <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+                    </div>
+                    <input type="text" id="school" name="school" placeholder="VD: THPT Phan Châu Trinh, Đà Nẵng" class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-fpt-orange focus:border-transparent transition-all placeholder:text-slate-400">
+                  </div>
+                </div>
+
+                <div>
+                  <label for="major" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                    Ngành học quan tâm <span class="text-red-500">*</span>
+                  </label>
+                  <div class="relative">
+                    <select id="major" name="major" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-fpt-orange focus:border-transparent transition-all bg-white text-slate-700">
+                      <option value="">-- Chọn ngành muốn xét tuyển --</option>
+                      <option value="Lập Trình Web">Lập trình Web (Frontend & Backend)</option>
+                      <option value="Kỹ Thuật Phần Mềm & AI">Kỹ thuật phần mềm & Ứng dụng AI</option>
+                      <option value="Thiết Kế Đồ Họa">Thiết kế đồ họa (Graphic Design)</option>
+                      <option value="Digital Marketing">Digital & Social Media Marketing</option>
+                      <option value="Logistics & Chuỗi Cung Ứng">Logistics & Quản lý Chuỗi cung ứng</option>
+                      <option value="Quản Trị Khách Sạn & Resort">Quản trị Khách sạn & Resort 5 sao</option>
+                      <option value="An Toàn Thông Tin">An toàn thông tin & Mạng máy tính</option>
+                      <option value="Thương Mại Điện Tử">Thương mại điện tử (E-Commerce)</option>
+                    </select>
+                  </div>
+                  <p id="major-error" class="text-red-500 text-xs mt-1 hidden"></p>
+                </div>
+              </div>
+
+              <!-- Ghi chú / Câu hỏi -->
+              <div>
+                <label for="note" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                  Câu hỏi hoặc Ghi chú thêm
+                </label>
+                <textarea id="note" name="note" rows="2" placeholder="Ví dụ: Em muốn đăng ký xét học bổng 50%..." class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-fpt-orange focus:border-transparent transition-all placeholder:text-slate-400"></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" id="submit-btn" class="w-full py-4 rounded-xl bg-gradient-to-r from-fpt-orange to-[#FF7A34] hover:from-fpt-orange-dark hover:to-fpt-orange text-white font-heading font-extrabold text-base shadow-lg shadow-orange-500/30 hover:shadow-orange-500/50 transition-all duration-300 flex items-center justify-center gap-2 group">
+                <span id="btn-text">Gửi Hồ Sơ Xét Tuyển Ngay</span>
+                <i data-lucide="send" id="btn-icon" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+              </button>
+
+              <div class="text-center text-[11px] text-slate-400">
+                Bằng việc gửi thông tin, bạn đồng ý nhận tư vấn tuyển sinh chính thức từ FPT Polytechnic Đà Nẵng.
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FOOTER SECTION -->
+  <footer id="lien-he" class="bg-fpt-navy text-slate-300 pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+        
+        <!-- Col 1: About FPT Poly -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-fpt-orange text-white font-heading font-black text-xl flex items-center justify-center">
+              FPT
+            </div>
+            <div>
+              <div class="font-heading font-bold text-white text-base leading-none">POLYTECHNIC</div>
+              <div class="text-[11px] text-orange-400 font-semibold mt-0.5">CƠ SỞ ĐÀ NẴNG</div>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Trường Cao đẳng FPT Polytechnic trực thuộc Tập đoàn FPT, đào tạo theo triết lý "Thực học - Thực nghiệp". Đem lại cơ hội việc làm vững chắc cho thế hệ trẻ miền Trung.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-fpt-orange text-white flex items-center justify-center transition-colors">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-fpt-orange text-white flex items-center justify-center transition-colors">
+              <i data-lucide="video" class="w-4 h-4"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-fpt-orange text-white flex items-center justify-center transition-colors">
+              <i data-lucide="youtube" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Addresses -->
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-white text-sm uppercase tracking-wider">Văn Phòng Tuyển Sinh Đà Nẵng</h4>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-fpt-orange flex-shrink-0 mt-0.5"></i>
+              <span><strong>Cơ sở 1:</strong> 137 Nguyễn Thị Thập, P. Hòa Minh, Q. Liên Chiểu, TP. Đà Nẵng</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-fpt-orange flex-shrink-0 mt-0.5"></i>
+              <span><strong>Cơ sở 2:</strong> Nam Kỳ Khởi Nghĩa, P. Hòa Quý, Q. Ngũ Hành Sơn, TP. Đà Nẵng</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="phone" class="w-4 h-4 text-fpt-orange flex-shrink-0"></i>
+              <span><strong>Hotline:</strong> (0236) 7300 999 - 0981 325 356</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="mail" class="w-4 h-4 text-fpt-orange flex-shrink-0"></i>
+              <span><strong>Email:</strong> caodangfpt.dn@fpt.edu.vn</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Useful Links -->
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-white text-sm uppercase tracking-wider">Hỗ Trợ Thí Sinh</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#dang-ky" class="hover:text-fpt-orange transition-colors">Hướng dẫn xét học bạ</a></li>
+            <li><a href="#hoc-phi" class="hover:text-fpt-orange transition-colors">Chính sách học bổng</a></li>
+            <li><a href="#nganh-hoc" class="hover:text-fpt-orange transition-colors">Quy chuẩn chuẩn đầu ra</a></li>
+            <li><a href="#hero" class="hover:text-fpt-orange transition-colors">Hệ thống Doanh nghiệp</a></li>
+            <li><a href="#doi-song" class="hover:text-fpt-orange transition-colors">Hỏi đáp tuyển sinh (FAQ)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Map & Direct Navigation -->
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-white text-sm uppercase tracking-wider">Bản Đồ Chỉ Đường</h4>
+          <div class="rounded-2xl overflow-hidden border border-slate-700 bg-slate-800/80 p-4 text-center">
+            <div class="w-10 h-10 rounded-xl bg-orange-500/20 text-orange-400 mx-auto flex items-center justify-center mb-2">
+              <i data-lucide="navigation" class="w-5 h-5"></i>
+            </div>
+            <p class="text-xs text-slate-300 font-semibold mb-3">Tòa nhà FPT Poly Đà Nẵng</p>
+            <a href="https://maps.google.com" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-xs text-fpt-orange hover:text-white font-bold transition-colors">
+              <span>Xem trên Google Maps</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <div>
+          © 2025 Cao Đẳng FPT Polytechnic Đà Nẵng. Bản quyền thuộc Tổ chức Giáo dục FPT.
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-slate-300">Quy chế tuyển sinh</a>
+          <a href="#" class="hover:text-slate-300">Chính sách bảo mật</a>
+          <a href="#" class="hover:text-slate-300">Điều khoản sử dụng</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTION BUTTONS: QUICK CONTACT & BACK TO TOP -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col items-center gap-3">
+    <!-- Call Hotline Bubble -->
+    <a href="tel:0981325356" class="w-12 h-12 rounded-full bg-green-500 hover:bg-green-600 text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-200" title="Gọi tư vấn ngay">
+      <i data-lucide="phone-call" class="w-6 h-6 animate-pulse"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" type="button" class="w-11 h-11 rounded-full bg-fpt-navy/90 hover:bg-fpt-navy text-white flex items-center justify-center shadow-lg opacity-0 pointer-events-none transition-all duration-300 hover:scale-105" aria-label="Quay lại đầu trang">
+      <i data-lucide="arrow-up" class="w-5 h-5"></i>
+    </button>
+  </div>
+
+  <!-- TOAST NOTIFICATION COMPONENT -->
+  <div id="toast" class="fixed top-24 right-4 sm:right-6 z-50 transform translate-x-full opacity-0 transition-all duration-500 ease-out max-w-sm w-full pointer-events-none">
+    <div class="bg-white rounded-2xl p-4 shadow-2xl border-l-4 border-fpt-orange border-y border-r border-slate-100 flex items-start gap-3 pointer-events-auto">
+      <div class="w-9 h-9 rounded-xl bg-orange-100 text-fpt-orange flex items-center justify-center flex-shrink-0 mt-0.5">
+        <i data-lucide="check-circle" class="w-5 h-5"></i>
+      </div>
+      <div class="flex-1">
+        <h5 class="font-heading font-bold text-sm text-slate-900" id="toast-title">Đăng ký thành công!</h5>
+        <p class="text-xs text-slate-600 mt-0.5" id="toast-message">Ban tuyển sinh FPT Polytechnic Đà Nẵng đã nhận thông tin và sẽ gọi tư vấn trong thời gian sớm nhất.</p>
+      </div>
+      <button type="button" onclick="hideToast()" class="text-slate-400 hover:text-slate-600 p-1">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT: LOGIC & INTERACTIONS -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // 1. MOBILE MENU TOGGLE
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      const isExpanded = !mobileMenu.classList.contains('hidden');
+      if (isExpanded) {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      } else {
+        mobileMenu.classList.remove('hidden');
+        menuIcon.classList.add('hidden');
+        closeIcon.classList.remove('hidden');
+      }
+    });
+
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      });
+    });
+
+    // 2. SCROLL REVEAL EFFECT (IntersectionObserver)
+    const reveals = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          // unobserve to only animate once
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    reveals.forEach(el => revealObserver.observe(el));
+
+    // 3. ANIMATED NUMBER COUNTERS
+    const counters = document.querySelectorAll('.counter');
+    let hasAnimatedCounters = false;
+
+    const counterSection = document.getElementById('so-lieu');
+    const counterObserver = new IntersectionObserver((entries) => {
+      const [entry] = entries;
+      if (entry.isIntersecting && !hasAnimatedCounters) {
+        hasAnimatedCounters = true;
+        animateAllCounters();
+      }
+    }, { threshold: 0.2 });
+
+    if (counterSection) {
+      counterObserver.observe(counterSection);
+    }
+
+    function animateAllCounters() {
+      counters.forEach(counter => {
+        const target = parseFloat(counter.getAttribute('data-target'));
+        const decimals = parseInt(counter.getAttribute('data-decimals') || '0', 10);
+        const duration = 2000; // 2 seconds
+        const startTime = performance.now();
+
+        function updateCounter(currentTime) {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          // Ease-out cubic
+          const easeProgress = 1 - Math.pow(1 - progress, 3);
+          const currentVal = easeProgress * target;
+
+          counter.textContent = currentVal.toFixed(decimals);
+
+          if (progress < 1) {
+            requestAnimationFrame(updateCounter);
+          } else {
+            counter.textContent = target.toFixed(decimals);
+          }
+        }
+        requestAnimationFrame(updateCounter);
+      });
+    }
+
+    // 4. INTERACTIVE MAJORS TABS
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const majorCards = document.querySelectorAll('.major-card');
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const category = btn.getAttribute('data-category');
+
+        // Update active button state
+        tabButtons.forEach(b => {
+          b.classList.remove('bg-fpt-orange', 'text-white', 'shadow-md', 'shadow-orange-500/25');
+          b.classList.add('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+        });
+        btn.classList.remove('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+        btn.classList.add('bg-fpt-orange', 'text-white', 'shadow-md', 'shadow-orange-500/25');
+
+        // Filter cards with smooth fade
+        majorCards.forEach(card => {
+          const cardCat = card.getAttribute('data-category');
+          if (category === 'all' || cardCat === category) {
+            card.style.display = 'flex';
+            setTimeout(() => {
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0)';
+            }, 50);
+          } else {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(15px)';
+            setTimeout(() => {
+              card.style.display = 'none';
+            }, 250);
+          }
+        });
+      });
+    });
+
+    // Helper: Select major from card to form
+    function selectMajor(majorName) {
+      const select = document.getElementById('major');
+      if (select) {
+        select.value = majorName;
+        // Smooth scroll to admission form
+        document.getElementById('dang-ky').scrollIntoView({ behavior: 'smooth' });
+        // Flash select border
+        select.classList.add('ring-2', 'ring-fpt-orange');
+        setTimeout(() => select.classList.remove('ring-2', 'ring-fpt-orange'), 2000);
+      }
+    }
+
+    // 5. BACK TO TOP BUTTON
+    const backToTopBtn = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+        backToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+      } else {
+        backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+        backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // 6. FORM VALIDATION & TOAST NOTIFICATION
+    const form = document.getElementById('admission-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const btnText = document.getElementById('btn-text');
+    const toast = document.getElementById('toast');
+
+    // Validation Regex
+    const phoneRegex = /(84|0[3|5|7|8|9])+([0-9]{8})\b/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    function showError(elementId, errorId, message) {
+      const input = document.getElementById(elementId);
+      const errorMsg = document.getElementById(errorId);
+      if (input && errorMsg) {
+        input.classList.add('border-red-500', 'focus:ring-red-400');
+        input.classList.remove('border-slate-200');
+        errorMsg.textContent = message;
+        errorMsg.classList.remove('hidden');
+      }
+    }
+
+    function clearErrors() {
+      const inputs = form.querySelectorAll('input, select');
+      inputs.forEach(input => {
+        input.classList.remove('border-red-500', 'focus:ring-red-400');
+        input.classList.add('border-slate-200');
+      });
+      const errors = form.querySelectorAll('p[id$="-error"]');
+      errors.forEach(err => {
+        err.classList.add('hidden');
+        err.textContent = '';
+      });
+    }
+
+    function showToast(title, message) {
+      document.getElementById('toast-title').textContent = title;
+      document.getElementById('toast-message').textContent = message;
+      toast.classList.remove('translate-x-full', 'opacity-0');
+      toast.classList.add('translate-x-0', 'opacity-100');
+
+      // Auto hide after 5 seconds
+      setTimeout(() => {
+        hideToast();
+      }, 5000);
+    }
+
+    function hideToast() {
+      toast.classList.remove('translate-x-0', 'opacity-100');
+      toast.classList.add('translate-x-full', 'opacity-0');
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      clearErrors();
+
+      const fullname = document.getElementById('fullname').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const major = document.getElementById('major').value;
+
+      let isValid = true;
+
+      // Validate Name
+      if (!fullname) {
+        showError('fullname', 'name-error', 'Vui lòng nhập họ và tên của bạn.');
+        isValid = false;
+      }
+
+      // Validate Phone
+      if (!phone) {
+        showError('phone', 'phone-error', 'Vui lòng nhập số điện thoại liên hệ.');
+        isValid = false;
+      } else if (!phoneRegex.test(phone.replace(/\s+/g, ''))) {
+        showError('phone', 'phone-error', 'Số điện thoại không hợp lệ (gồm 10 chữ số).');
+        isValid = false;
+      }
+
+      // Validate Email
+      if (!email) {
+        showError('email', 'email-error', 'Vui lòng cung cấp địa chỉ email.');
+        isValid = false;
+      } else if (!emailRegex.test(email)) {
+        showError('email', 'email-error', 'Email không đúng định dạng (VD: ten@gmail.com).');
+        isValid = false;
+      }
+
+      // Validate Major
+      if (!major) {
+        showError('major', 'major-error', 'Vui lòng chọn một ngành học bạn quan tâm.');
+        isValid = false;
+      }
+
+      if (!isValid) return;
+
+      // Simulation of submission with loading state
+      submitBtn.disabled = true;
+      btnText.textContent = 'Đang xử lý hồ sơ...';
+
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        btnText.textContent = 'Gửi Hồ Sơ Xét Tuyển Ngay';
+        
+        // Show success toast
+        showToast(
+          'Đăng ký thành công!',
+          `Cảm ơn bạn ${fullname}. Ban tuyển sinh FPT Polytechnic Đà Nẵng đã tiếp nhận nguyện vọng ngành ${major} và sẽ liên hệ hỗ trợ bạn sớm!`
+        );
+
+        // Reset form
+        form.reset();
+      }, 800);
+    });
+  </script>
+</body>
+</html>
