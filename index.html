@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPT Polytechnic Đà Nẵng - Tuyển Sinh 2025</title>
+    <style>
+        :root {
+            --primary-color: #f36f21;
+            --secondary-color: #0054a6;
+            --dark-color: #1a1a1a;
+            --light-color: #f8f9fa;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--dark-color);
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-color);
+        }
+
+        .btn-cta {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-cta:hover {
+            background-color: #d95d12;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 140px 0 80px;
+            background: linear-gradient(135deg, #fff5f0 0%, #e6f0fa 100%);
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 42px;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-text h1 span {
+            color: var(--primary-color);
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        /* Registration Form */
+        .form-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .form-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input, 
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            outline: none;
+            transition: border 0.3s;
+        }
+
+        .form-group input:focus, 
+        .form-group select:focus {
+            border-color: var(--primary-color);
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+        }
+
+        /* Majors Section */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            color: var(--secondary-color);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+
+        .majors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .major-card {
+            background: var(--white);
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .major-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            border-color: var(--primary-color);
+        }
+
+        .major-icon {
+            font-size: 40px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .major-card h3 {
+            font-size: 20px;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+        }
+
+        /* Highlights Section */
+        .highlights {
+            background-color: var(--light-color);
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            background: var(--white);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .highlight-number {
+            background: var(--primary-color);
+            color: var(--white);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: var(--white);
+            padding: 40px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-info h4 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .footer-info p {
+            margin-bottom: 8px;
+            color: #ccc;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            color: #888;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+
+            .hero-text h1 {
+                font-size: 32px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">FPT <span>Polytechnic</span></a>
+            <ul class="nav-menu">
+                <li><a href="#nganh-hoc">Ngành học</a></li>
+                <li><a href="#uu-the">Ưu thế</a></li>
+                <li><a href="#xet-tuyen">Xét tuyển</a></li>
+                <li><a href="#lien-he">Liên hệ</a></li>
+            </ul>
+            <a href="#xet-tuyen" class="btn-cta">Đăng ký ngay</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <h1>Tuyển Sinh 2025<br><span>FPT Polytechnic Đà Nẵng</span></h1>
+                <p>Thực học - Thực nghiệp. 97.7% sinh viên có việc làm ngay sau khi tốt nghiệp. Thời gian đào tạo rút ngắn chỉ còn 2 năm (6 học kỳ).</p>
+            </div>
+            
+            <div class="form-card" id="xet-tuyen">
+                <h3>ĐĂNG KÝ TƯ VẤN XÉT TUYỂN</h3>
+                <form onsubmit="event.preventDefault(); alert('Đăng ký thành công! Chúng tôi sẽ liên hệ lại sớm nhất.');">
+                    <div class="form-group">
+                        <input type="text" placeholder="Họ và tên *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Số điện thoại *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="" disabled selected>Chọn ngành học quan tâm *</option>
+                            <option value="cntt">Công nghệ thông tin</option>
+                            <option value="tkdh">Thiết kế đồ họa</option>
+                            <option value="mkt">Digital Marketing</option>
+                            <option value="qtkd">Quản trị kinh doanh</option>
+                            <option value="ks">Quản trị khách sạn</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-cta btn-submit">NHẬN TƯ VẤN MIỄN PHÍ</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Majors Section -->
+    <section class="section" id="nganh-hoc">
+        <div class="container">
+            <div class="section-title">
+                <h2>CHƯƠNG TRÌNH ĐÀO TẠO</h2>
+            </div>
+            <div class="majors-grid">
+                <div class="major-card">
+                    <div class="major-icon">💻</div>
+                    <h3>Công Nghệ Thông Tin</h3>
+                    <p>Đào tạo Lập trình Web, Mobile, Ứng dụng phần mềm theo chuẩn thực tế doanh nghiệp.</p>
+                </div>
+                <div class="major-card">
+                    <div class="major-icon">🎨</div>
+                    <h3>Thiết Kế Đồ Họa</h3>
+                    <p>Phát triển tư duy thẩm mỹ, thiết kế nhận diện thương hiệu, UI/UX và truyền thông.</p>
+                </div>
+                <div class="major-card">
+                    <div class="major-icon">📈</div>
+                    <h3>Digital Marketing</h3>
+                    <p>Nắm vững SEO, Ads, Content Marketing, Social Media và chiến lược tiếp thị số.</p>
+                </div>
+                <div class="major-card">
+                    <div class="major-icon">🏨</div>
+                    <h3>Quản Trị Khách Sạn</h3>
+                    <p>Đào tạo kỹ năng nghiệp vụ nhà hàng - khách sạn chuẩn quốc tế tại thành phố du lịch.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="section highlights" id="uu-the">
+        <div class="container">
+            <div class="section-title">
+                <h2>VÌ SAO CHỌN FPT POLYTECHNIC?</h2>
+            </div>
+            <div class="highlights-grid">
+                <div class="highlight-item">
+                    <div class="highlight-number">1</div>
+                    <div>
+                        <h4>Thời gian đào tạo ngắn</h4>
+                        <p>Chỉ 2 năm (6 học kỳ liên tục), giúp sinh viên ra trường sớm, tích lũy kinh nghiệm nhanh.</p>
+                    </div>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-number">2</div>
+                    <div>
+                        <h4>70% Thời lượng thực hành</h4>
+                        <p>Học tập qua dự án thực tế (Project-based learning), cọ xát năng lực thực thụ.</p>
+                    </div>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-number">3</div>
+                    <div>
+                        <h4>Cam kết hỗ trợ việc làm</h4>
+                        <p>Mạng lưới liên kết hơn 500+ doanh nghiệp hàng đầu trong và ngoài nước.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="lien-he">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h4>TRƯỜNG CAO ĐẲNG FPT POLYTECHNIC ĐÀ NẴNG</h4>
+                <p>📍 Địa chỉ: 137 Nguyễn Thị Thập, P. Hòa Minh, Q. Liên Chiểu, TP. Đà Nẵng</p>
+                <p>📞 Điện thoại: (0236) 3710 999</p>
+                <p>✉️ Email: caodangfptdaang@fpt.edu.vn</p>
+            </div>
+            <div class="footer-info">
+                <h4>THỜI GIAN LÀM VIỆC</h4>
+                <p>Thứ 2 - Thứ 7: 7h30 - 17h30</p>
+                <p>Chủ nhật: Nghỉ</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 FPT Polytechnic Đà Nẵng. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
